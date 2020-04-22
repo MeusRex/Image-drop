@@ -1,4 +1,4 @@
-# ModBox
+# Image Drop
 This FoundryVTT Module allows dropping Journal Entry to the canvas as Tile
 
 ## Setup
