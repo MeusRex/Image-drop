@@ -25,13 +25,11 @@ function _onDropImage(event, data) {
       locked: false,
       rotation: 0,
     }).then((data) => {
-      let tile = canvas.tiles.placeables.filter((a) => a.id === data._id)[0];
+      let tile = canvas.tiles.placeables.filter((a) => a.id === data.id)[0];
       // Update the tile width to have correct the aspect ratio
+      console.log(tile);
       tile._drawTile().then((img) => {
-        let ratio = tile.aspectRatio;
-        if (ratio) {
-          tile.update({ width: tile.height * tile.aspectRatio });
-        }
+        tile.update({ width: img.width, height: img.height });
       });
     });
   }
