@@ -27,7 +27,6 @@ function _onDropImage(event, data) {
     }).then((data) => {
       let tile = canvas.tiles.placeables.filter((a) => a.id === data.id)[0];
       // Update the tile width to have correct the aspect ratio
-      console.log(tile);
       tile._drawTile().then((img) => {
         tile.update({ width: img.width, height: img.height });
       });
