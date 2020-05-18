@@ -9,28 +9,22 @@ function _onDragStart(event) {
 }
 
 // Create the tile with the gathered informations
-function _onDropImage(event, data) {
+async function _onDropImage(event, data) {
   if (data.type == "image") {
-    // Projecting screen coords to the canvas
+    let tileData = {
+      img: data.src
+    };
+
+    // Determine the tile size
+    const tex = await loadTexture(data.src);
+    tileData.width = tex.width;
+    tileData.height = tex.height;
+    
+    // Project tile position
     let t = canvas.tiles.worldTransform;
-    Tile.create({
-      x: (event.clientX - t.tx) / canvas.stage.scale.x,
-      y: (event.clientY - t.ty) / canvas.stage.scale.y,
-      height: 250,
-      width: 250,
-      scale: 1,
-      z: 400,
-      img: data.src,
-      hidden: false,
-      locked: false,
-      rotation: 0,
-    }).then((data) => {
-      let tile = canvas.tiles.placeables.filter((a) => a.id === data.id)[0];
-      // Update the tile width to have correct the aspect ratio
-      tile._drawTile().then((img) => {
-        tile.update({ width: img.width, height: img.height });
-      });
-    });
+    tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
+    tileData.y = (event.clientY - t.ty) / canvas.stage.scale.y,
+    Tile.create(tileData);
   }
 }
 
