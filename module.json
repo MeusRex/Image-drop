@@ -2,7 +2,7 @@
   "name": "image-drop",
   "title": "ImageDrop",
   "description": "<p>Allows dropping Journal Entry to the canvas as Tile</p>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "U~man",
   "scripts": [],
   "esmodules": [
@@ -14,6 +14,6 @@
   "url": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop",
   "manifest": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/raw/master/module.json",
   "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/archive/master/foundryvtt-image-drop-master.zip",
-  "minimumCoreVersion": "0.6.0",
-  "compatibleCoreVersion": "0.6.0"
+  "minimumCoreVersion": "0.8.5",
+  "compatibleCoreVersion": "0.8.6"
 }

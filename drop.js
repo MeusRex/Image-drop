@@ -21,10 +21,10 @@ async function _onDropImage(event, data) {
     tileData.height = tex.height;
     
     // Project tile position
-    let t = canvas.tiles.worldTransform;
+    let t = canvas.foreground.worldTransform;
     tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
     tileData.y = (event.clientY - t.ty) / canvas.stage.scale.y,
-    Tile.create(tileData);
+    canvas.scene.createEmbeddedDocuments("Tile", [tileData]);
   }
 }
 
