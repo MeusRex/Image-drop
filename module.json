@@ -13,7 +13,7 @@
   "languages": [],
   "url": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop",
   "manifest": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/raw/master/module.json",
-  "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/archive/master/foundryvtt-image-drop-master.zip",
+  "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/archive/v1.0.2/foundryvtt-image-drop-v1.0.2.zip",
   "minimumCoreVersion": "0.6.0",
-  "compatibleCoreVersion": "0.6.0"
+  "compatibleCoreVersion": "0.7.10"
 }
