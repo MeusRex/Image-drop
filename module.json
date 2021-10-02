@@ -13,7 +13,7 @@
   "languages": [],
   "url": "https://github.com/MeusRex/Image-drop/tree/master",
   "manifest": "https://github.com/MeusRex/Image-drop/blob/master/module.json",
-  "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/archive/v1.0.3/foundryvtt-image-drop-v1.0.3.zip",
+  "download": "https://github.com/MeusRex/Image-drop/archive/refs/tags/v1.04.zip",
   "minimumCoreVersion": "0.8.5",
   "compatibleCoreVersion": "0.8.9"
 }
