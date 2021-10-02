@@ -11,8 +11,8 @@
   "styles": [],
   "packs": [],
   "languages": [],
-  "url": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop",
-  "manifest": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/raw/master/module.json",
+  "url": "https://github.com/MeusRex/Image-drop",
+  "manifest": "https://github.com/MeusRex/Image-drop/blob/fvtt-0.7/module.json",
   "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/-/archive/v1.0.2/foundryvtt-image-drop-v1.0.2.zip",
   "minimumCoreVersion": "0.6.0",
   "compatibleCoreVersion": "0.7.10"

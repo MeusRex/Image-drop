@@ -24,7 +24,7 @@ async function _onDropImage(event, data) {
     let t = canvas.tiles.worldTransform;
     tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
     tileData.y = (event.clientY - t.ty) / canvas.stage.scale.y,
-    Tile.create(tileData);
+    Tile.create(tileData, {hidden: true});
   }
 }
 
