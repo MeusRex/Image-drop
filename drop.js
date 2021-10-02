@@ -19,12 +19,13 @@ async function _onDropImage(event, data) {
     const tex = await loadTexture(data.src);
     tileData.width = tex.width;
     tileData.height = tex.height;
+    tileData.hidden = true;
     
     // Project tile position
     let t = canvas.foreground.worldTransform;
     tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
     tileData.y = (event.clientY - t.ty) / canvas.stage.scale.y,
-    canvas.scene.createEmbeddedDocuments("Tile", [tileData]);
+    canvas.scene.createEmbeddedDocuments(Tile.embeddedName, [tileData]);
   }
 }
 
